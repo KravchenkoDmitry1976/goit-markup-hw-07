@@ -12,26 +12,109 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="CSS/tablet.css">
+    <link rel="stylesheet" href="CSS/desktop.css">
 </head>
 <body>
     <header class="header-secondpage">
         <div class="container">
             <div class="header-box">
-        <nav class="site-navigation">
-            <a class="site-logo" href="./index.html">WEB<span class="site-logo-piece">STUDIO</span></a>
-            <ul class="nav-list list">
-            <li class="nav-item"><a class="nav-link" href="./index.html">Studio</a></li>
-            <li class="nav-item"><a class="nav-link current" href="./portfolio.html">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+               <nav class="site-navigation">
+                  <a class="site-logo logo-hdr" href="./index.html">WEB<span class="site-logo-piece">STUDIO</span></a>
+                  <ul class="nav-list list">
+                  <li class="nav-item"><a class="nav-link  link" href="./index.html">Studio</a></li>
+            <li class="nav-item"><a class="nav-link  current link" href="./portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#">Contacts</a></li>
             </ul>
         </nav>
         <address class="contacts">
         <ul class="contacts-list list">
-            <li class="conacts-item"><a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li class="conacts-item"><a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+            <li class="conacts-item"><a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li class="conacts-item"><a class="contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
         </ul>
     </address>
+    
+    <button
+          type="button"
+          class="mobile-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon">
+            <use href="./images/icons.svg#icon-mobile"></use>
+          </svg>
+        </button>
     </div>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu" type="button">
+            <svg class="mobile-menu-close-icon">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-navigation">
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a href="./index.html" class="mobile-menu-item-link link">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="./portfolio.html" class="mobile-menu-item-link link">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="#" class="mobile-menu-item-link current link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contact-list list">
+              <li class="mobile-menu-contact-item">
+                <a href="tel:+110001111111" class="mobile-menu-tel-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contact-item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-email-link link">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu-soc-list list">
+            <li class="mobile-menu-soc-list-item">
+              <a href="#" class="mobile-menu-soc-link link">
+                <svg class="mobile-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-soc-list-item">
+              <a href="#" class="mobile-menu-soc-link link">
+                <svg class="mobile-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-soc-list-item">
+              <a href="#" class="mobile-menu-soc-link link">
+                <svg class="mobile-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-menu-soc-list-item">
+              <a href="#" class="mobile-menu-soc-link link">
+                <svg class="mobile-menu-soc-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+     </div>
     </div>
     </header>
     <main>
@@ -46,10 +129,33 @@
                 <li class="filter-item"><button class="filter-btn" type="button">Marketing</button></li>
             </ul>
             <ul class="portfolio-list list">
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img1.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img1-356.webp 356w,
+                                        ./images/portfolio-img1-360.webp 360w,
+                                        ./images/portfolio-img1-396.webp 396w,
+                                        ./images/portfolio-img1-712.webp 712w,
+                                        ./images/portfolio-img1-720.webp 720w,
+                                        ./images/portfolio-img1-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img1-356.jpg 356w,
+                                            ./images/portfolio-img1-360.jpg 360w,
+                                            ./images/portfolio-img1-396.jpg 396w,
+                                            ./images/portfolio-img1-712.jpg 712w,
+                                            ./images/portfolio-img1-720.jpg 720w,
+                                            ./images/portfolio-img1-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                            
+                    <img class="portfolio-img" src="./images/portfolio-img1-360.jpg" 
                     width="360" height="300" alt="finished project poster">
-                    <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
+                            </picture>
+                 <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="portfolio-box">
                     <h3 class="portfolio-title">Banking App Interface Concept</h3>
@@ -57,9 +163,32 @@
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img2.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img2-356.webp 356w,
+                                        ./images/portfolio-img2-360.webp 360w,
+                                        ./images/portfolio-img2-396.webp 396w,
+                                        ./images/portfolio-img2-712.webp 712w,
+                                        ./images/portfolio-img2-720.webp 720w,
+                                        ./images/portfolio-img2-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img2-356.jpg 356w,
+                                            ./images/portfolio-img2-360.jpg 360w,
+                                            ./images/portfolio-img2-396.jpg 396w,
+                                            ./images/portfolio-img2-712.jpg 712w,
+                                            ./images/portfolio-img2-720.jpg 720w,
+                                            ./images/portfolio-img2-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                            
+                    <img class="portfolio-img" src="./images/portfolio-img2-360.jpg" 
                     width="360" height="300" alt="finished project poster">
+                            </picture>
                     <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                      <div class="portfolio-box">
@@ -68,9 +197,32 @@
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img3.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img3-356.webp 356w,
+                                        ./images/portfolio-img3-360.webp 360w,
+                                        ./images/portfolio-img3-396.webp 396w,
+                                        ./images/portfolio-img3-712.webp 712w,
+                                        ./images/portfolio-img3-720.webp 720w,
+                                        ./images/portfolio-img3-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img3-356.jpg 356w,
+                                            ./images/portfolio-img3-360.jpg 360w,
+                                            ./images/portfolio-img3-396.jpg 396w,
+                                            ./images/portfolio-img3-712.jpg 712w,
+                                            ./images/portfolio-img3-720.jpg 720w,
+                                            ./images/portfolio-img3-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                            
+                    <img class="portfolio-img" src="./images/portfolio-img3-360.jpg" 
                     width="360" height="300" alt="finished project poster">
+                            </picture>
                     <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="portfolio-box">
@@ -79,9 +231,32 @@
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img4.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img4-356.webp 356w,
+                                        ./images/portfolio-img4-360.webp 360w,
+                                        ./images/portfolio-img4-396.webp 396w,
+                                        ./images/portfolio-img4-712.webp 712w,
+                                        ./images/portfolio-img4-720.webp 720w,
+                                        ./images/portfolio-img4-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img4-356.jpg 356w,
+                                            ./images/portfolio-img4-360.jpg 360w,
+                                            ./images/portfolio-img4-396.jpg 396w,
+                                            ./images/portfolio-img4-712.jpg 712w,
+                                            ./images/portfolio-img4-720.jpg 720w,
+                                            ./images/portfolio-img4-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                            
+                    <img class="portfolio-img" src="./images/portfolio-img4-360.jpg" 
                     width="360" height="300" alt="finished project poster">
+                            </picture>
                     <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="portfolio-box">
@@ -90,9 +265,33 @@
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img5.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img5-356.webp 356w,
+                                        ./images/portfolio-img5-360.webp 360w,
+                                        ./images/portfolio-img5-396.webp 396w,
+                                        ./images/portfolio-img5-712.webp 712w,
+                                        ./images/portfolio-img5-720.webp 720w,
+                                        ./images/portfolio-img5-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img5-356.jpg 356w,
+                                            ./images/portfolio-img5-360.jpg 360w,
+                                            ./images/portfolio-img5-396.jpg 396w,
+                                            ./images/portfolio-img5-712.jpg 712w,
+                                            ./images/portfolio-img5-720.jpg 720w,
+                                            ./images/portfolio-img5-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                            
+                    <img class="portfolio-img" src="./images/portfolio-img5-360.jpg" 
                     width="360" height="300" alt="finished project poster">
+                            </picture>
+                    
                     <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="portfolio-box">
@@ -101,9 +300,32 @@
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img6.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img6-356.webp 356w,
+                                        ./images/portfolio-img6-360.webp 360w,
+                                        ./images/portfolio-img6-396.webp 396w,
+                                        ./images/portfolio-img6-712.webp 712w,
+                                        ./images/portfolio-img6-720.webp 720w,
+                                        ./images/portfolio-img6-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img6-356.jpg 356w,
+                                            ./images/portfolio-img6-360.jpg 360w,
+                                            ./images/portfolio-img6-396.jpg 396w,
+                                            ./images/portfolio-img6-712.jpg 712w,
+                                            ./images/portfolio-img6-720.jpg 720w,
+                                            ./images/portfolio-img6-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                            
+                    <img class="portfolio-img" src="./images/portfolio-img6-360.jpg" 
                     width="360" height="300" alt="finished project poster">
+                            </picture>
                     <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="portfolio-box">
@@ -112,9 +334,32 @@
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img7.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img7-356.webp 356w,
+                                        ./images/portfolio-img7-360.webp 360w,
+                                        ./images/portfolio-img7-396.webp 396w,
+                                        ./images/portfolio-img7-712.webp 712w,
+                                        ./images/portfolio-img7-720.webp 720w,
+                                        ./images/portfolio-img7-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img7-356.jpg 356w,
+                                            ./images/portfolio-img7-360.jpg 360w,
+                                            ./images/portfolio-img7-396.jpg 396w,
+                                            ./images/portfolio-img7-712.jpg 712w,
+                                            ./images/portfolio-img7-720.jpg 720w,
+                                            ./images/portfolio-img7-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                            
+                    <img class="portfolio-img" src="./images/portfolio-img7-360.jpg" 
                     width="360" height="300" alt="finished project poster">
+                            </picture>
                     <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="portfolio-box">
@@ -123,9 +368,32 @@
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img8.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img8-356.webp 356w,
+                                        ./images/portfolio-img8-360.webp 360w,
+                                        ./images/portfolio-img8-396.webp 396w,
+                                        ./images/portfolio-img8-712.webp 712w,
+                                        ./images/portfolio-img8-720.webp 720w,
+                                        ./images/portfolio-img8-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img8-356.jpg 356w,
+                                            ./images/portfolio-img8-360.jpg 360w,
+                                            ./images/portfolio-img8-396.jpg 396w,
+                                            ./images/portfolio-img8-712.jpg 712w,
+                                            ./images/portfolio-img8-720.jpg 720w,
+                                            ./images/portfolio-img8-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                            
+                    <img class="portfolio-img" src="./images/portfolio-img8-360.jpg" 
                     width="360" height="300" alt="finished project poster">
+                            </picture>
                     <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="portfolio-box">
@@ -134,9 +402,31 @@
                 </div>
                 </a>
                 </li>
-                <li class="portfolio-item"><a class="portfolio-link" href=""><div class="portfolio-overlay">
-                    <img class="portfolio-img" src="./images/portfolio-img9.jpg" 
+                <li class="portfolio-item">
+                    <a class="portfolio-link" href="">
+                        <div class="portfolio-overlay">
+                            <picture>
+                                <source
+                                srcset="./images/portfolio-img9-356.webp 356w,
+                                        ./images/portfolio-img9-360.webp 360w,
+                                        ./images/portfolio-img9-396.webp 396w,
+                                        ./images/portfolio-img9-712.webp 712w,
+                                        ./images/portfolio-img9-720.webp 720w,
+                                        ./images/portfolio-img9-792.webp 792w,"
+                                    sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                    type="image/webp"/>
+                                    <source
+                                    srcset="./images/portfolio-img9-356.jpg 356w,
+                                            ./images/portfolio-img9-360.jpg 360w,
+                                            ./images/portfolio-img9-396.jpg 396w,
+                                            ./images/portfolio-img9-712.jpg 712w,
+                                            ./images/portfolio-img9-720.jpg 720w,
+                                            ./images/portfolio-img9-792.jpg 792w,"
+                                        sizes="(min-width: 1200px) 360px, (min-width: 768px) 356px, (min-width: 480px) 396px, 100vw"
+                                        type="image/jpeg"/>     
+                    <img class="portfolio-img" src="./images/portfolio-img9-360.jpg" 
                     width="360" height="300" alt="finished project poster">
+                            </picture>
                     <p class="overlay-txt">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                 </div>
                     <div class="portfolio-box">
@@ -150,7 +440,7 @@
         </section>
     </main> 
     <footer class="site-footer">
-        <div class="container-footer">
+        <div class="container container-footer">
             <div class="footer-logo-box">
         <a class="site-logo" href="./index.html">Web<span class="site-logo-piece-footer">Studio</span></a>
         <p class="footer-txt">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
@@ -204,6 +494,7 @@
         </div>
     </form>
     </div>
-       </footer> 
+       </footer>
+       <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -1,0 +1,111 @@
+@media screen and (min-width: 480px) {
+    .container {
+      max-width: 425px;
+    }
+   
+    .mobile-menu-soc-list {
+      justify-content: start;
+      gap: 56px;
+    }
+  
+    .mobile-menu-tel-link {
+      font-size: 36px;
+    }
+   
+    .customers-list {
+      width: 396px;
+    }
+    .footer-subscribe-mail{
+      width: 396px;
+    }
+}
+@media screen and (min-width: 425px) {
+    .hero {
+      background-image: linear-gradient(var(--background-color-hero), var(--background-color-hero)),
+        url(../images/hero-img-tab.jpg);
+    }
+  
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+          url(../images/hero-img-tab-2x.jpg);
+      }
+    }
+  }
+    @media screen and (max-width: 767px) {
+        .nav-list {
+          display: none;
+        }
+      
+        .contacts-list {
+          display: none;
+        }
+      
+        .benefits-item {
+          max-width: 396px;
+        }
+      
+        .benefits-item:not(:last-child) {
+          margin-bottom: 72px;
+        }
+      
+        .benefits-title {
+          text-align: center;
+        }
+      
+        .team-item {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+        .team-item:not(:last-child) {
+          margin-bottom: 72px;
+        }
+      
+        .customers-list {
+          justify-content: center;
+        }
+      
+        .footer-logo-box {
+          margin: 0 auto 72px auto;
+        }
+      
+        .logo-ftr {
+          text-align: center;
+        }
+      
+        .footer-soc-list {
+          margin-bottom: 72px;
+        }
+      
+        .footer-soc-txt {
+          text-align: center;
+        }
+      
+        .footer-sudscribe-title {
+          text-align: center;
+        }
+      
+        .footer-subscribe-mail {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      
+        .footer-subscribe-btn {
+          margin: 16px auto 0 auto;
+        }
+      
+        .modal {
+          width: 100%;
+          max-width: 392px;
+        }
+      
+        .filter-list {
+          row-gap: 16px;
+          width: 263px;
+        }
+      
+        .portfolio-item:not(:last-child) {
+          margin-bottom: 48px;
+        }
+      }
