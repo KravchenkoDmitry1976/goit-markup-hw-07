@@ -1,29 +1,21 @@
 @media screen and (min-width: 768px) {
-    /* =============== COMPONENTS =============== */
     .container {
       max-width: 766px;
     }
-    /* =============== /COMPONENTS =============== */
-  
-    /* =============== HEADER =============== */
     .mobile-menu-btn {
       display: none;
     }
-  
     .mobile-menu {
       display: none;
     }
-  
     .site-navigation {
       display: flex;
       margin-right: 118px;
     }
-  
     .logo-hdr {
       margin-right: 120px;
       line-height: 1.17;
     }
-  
     .nav-list {
       display: flex;
       gap: 40px;
@@ -31,7 +23,6 @@
       font-weight: 500;
       line-height: 1.5;
     }
-  
     .nav-link {
       display: flex;
       align-items: center;
@@ -39,13 +30,11 @@
       padding: 24px 0 22px;
     }
     .contacts-list{
-        display: flex;
-       
+        display: flex;   
     }
     .current {
       position: relative;
     }
-  
     .current::after {
       content: " ";
       position: absolute;
@@ -56,11 +45,6 @@
       border-radius: 2px;
       background-color: var(--pressed-state-color);
     }
-  
-    
-    /* =============== /HEADER =============== */
-  
-    /* =============== HERO =============== */
     .hero {
       background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/hero-img.jpg);
@@ -80,9 +64,6 @@
       max-width: 494px;
       margin-bottom: 56px;
     }
-    /* =============== /HERO =============== */
-  
-    /* =============== FEATURES =============== */
     .benefits-list {
       display: flex;
     }
@@ -90,9 +71,6 @@
     .benefits-item {
       width: 356px;
     }
-    /* =============== /FEATURES =============== */
-  
-    /* =============== TEAM =============== */
     .team-list {
       display: flex;
       justify-content: center;
@@ -100,9 +78,6 @@
       column-gap: 24px;
       row-gap: 64px;
     }
-    /* =============== /TEAM =============== */
-  
-    /* =============== CUSTOMERS =============== */
     .customers-list {
       column-gap: 24px;
       width: 552px;
@@ -118,35 +93,53 @@
     .customers-icon {
       width: 104px;
     }
-    /* =============== /CUSTOMERS =============== */
-  
-    /* =============== FOOTER =============== */
     .container-footer {
       display: flex;
       justify-content: start;
       flex-wrap: wrap;
     }
-  
-    
-  
     .footer-subscribe {
       width: 453px;
       display: flex;
     }
+    .footer-logo-box{
+      margin-bottom: 0;
+      margin-left: 0;
+      margin-right: 24px ;
+    }
+    .footer-subscribe-mail {
+      width: 264px;
   
+    }
+    .footer-subscribe {
+      width: 453px;
+      display: flex;
+    }
+    .footer-logo-box{
+      margin-right: 24px ;
+    }
     .footer-subscribe-mail {
       width: 264px;
       
     }
-    /* =============== /FOOTER =============== */
-  
-    /* =============== MODAL =============== */
-    .modal {
-      width: 408px;
+    .footer-subscribe-title{
+      text-align: start;
+      margin-bottom: 0;
     }
-    /* =============== /MODAL =============== */
-  
-    /* =============== PROJECTS =============== */
+    .footer-subscribe-second-box{
+           gap: 24px;
+           justify-content: center;
+           flex-wrap:nowrap;
+    }      
+    .footer-soc-list{
+      margin-bottom: 0;
+    }
+    .logo-ftr{
+      text-align: start;
+    }
+    .modal {
+      max-width: 408px;
+    }
     .portfolio-proects {
       padding-top: 64px;
       padding-bottom: 96px;
@@ -171,7 +164,9 @@
     .portfolio-item {
       flex-basis: calc((100% - 24px) / 2);
     }
-    /* =============== /PROJECTS =============== */
+    .modal{
+      width: 408px;
+    }
   }
   
   @media screen and (max-width: 1199px) {
@@ -221,4 +216,5 @@
     .container-footer{
       width: 552px;
     }
-  }
+    
+}

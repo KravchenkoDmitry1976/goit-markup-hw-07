@@ -1,17 +1,14 @@
 @media screen and (min-width: 480px) {
     .container {
       max-width: 425px;
-    }
-   
+    }   
     .mobile-menu-soc-list {
       justify-content: start;
       gap: 56px;
     }
-  
     .mobile-menu-tel-link {
       font-size: 36px;
     }
-   
     .customers-list {
       width: 396px;
     }
@@ -65,14 +62,36 @@
         .customers-list {
           justify-content: center;
         }
-      
-        .footer-logo-box {
-          margin: 0 auto 72px auto;
+        .filter-list {
+          row-gap: 16px;
+          width: 263px;
         }
+      
+        .portfolio-item:not(:last-child) {
+          margin-bottom: 48px;
+      }
+    }
       
         .logo-ftr {
+          display: block;
+          font-family: 'Raleway';
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 1.33;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+          color:var(--primary-brand);
+          text-decoration: none;
           text-align: center;
+          margin-bottom: 16px;
         }
+        .footer-logo-box{
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 72px;
+          width: 264px;
+          
+      }
       
         .footer-soc-list {
           margin-bottom: 72px;
@@ -92,7 +111,7 @@
         }
       
         .footer-subscribe-btn {
-          margin: 16px auto 0 auto;
+          margin: auto;
         }
       
         .modal {
@@ -100,12 +119,6 @@
           max-width: 392px;
         }
       
-        .filter-list {
-          row-gap: 16px;
-          width: 263px;
-        }
+        
+        
       
-        .portfolio-item:not(:last-child) {
-          margin-bottom: 48px;
-        }
-      }

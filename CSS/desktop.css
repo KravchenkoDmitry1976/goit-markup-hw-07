@@ -1,5 +1,4 @@
 @media screen and (min-width: 1200px) {
-    /* =============== COMPONENTS =============== */
     .container {
       max-width: 1158px;
     }
@@ -8,9 +7,6 @@
       
       padding-bottom: 120px;
     }
-    /* =============== /COMPONENTS =============== */
-  
-    /* =============== HEADER =============== */
     .logo-hdr {
       line-height: 1.33;
       margin-right: 76px;
@@ -34,9 +30,6 @@
     .contacts-item {
       line-height: 1.33;
     }
-    /* =============== /HEADER =============== */
-  
-    /* =============== HERO =============== */
     .hero {
       padding-top: 188px;
       padding-bottom: 188px;
@@ -46,9 +39,6 @@
     .hero-title {
       text-align: center;
     }
-    /* =============== /HERO =============== */
-  
-    /* =============== FEATURES =============== */
     .benefits {
       padding-top: 120px;
       padding-bottom: 120px;
@@ -86,8 +76,6 @@
     .benefits-txt {
       font-weight: 400;
     }
-    /* =============== /FEATURES =============== */
-  
     .activity {
         padding-bottom: 120px;
         text-align: center;
@@ -116,11 +104,6 @@
   
     .customers-list {
       width: auto;
-    }
-    /* =============== /CUSTOMERS =============== */
-  
-    /* =============== FOOTER =============== */
-    .footer {
       padding-top: 100px;
       padding-bottom: 100px;
     }
@@ -141,24 +124,20 @@
       margin-left: auto;
       height: 80px;
     }
-    /* =============== /FOOTER =============== */
-  
-    /* =============== PROJECTS =============== */
     .portfolio-section {
       padding-top: 96px;
       padding-bottom: 120px;
     }
   
-    .filter {
+    .filter-list {
       margin-bottom: 72px;
     }
   
-    .project-list {
+    .portfolio-list {
       row-gap: 48px;
     }
   
-    .project-item {
+    .portfolio-item {
       flex-basis: calc((100% - (24px * 2)) / 3);
     }
-    /* =============== /PROJECTS =============== */
   }
